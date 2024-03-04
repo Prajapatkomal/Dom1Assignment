@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+</head>
+
+<body>
+    <input id="input1" type="text" placeholder="enter 1st Number" value="">
+    <input id="input2" type="text" placeholder="enter 2nd Number" value="">
+    <br>
+    <button id="btn1">Add</button>
+    <button id="btn2">Substract</button>
+    <button id="btn3">Multiply</button>
+    <button id="btn4">Devide</button>
+
+    <script>
+
+
+
+        document.getElementById("btn1").addEventListener("click", Add)
+        function Add() {
+            var input1 = parseInt(document.getElementById("input1").value)
+            var input2 = parseInt(document.getElementById("input2").value)
+            alert(input1 + input2)
+        }
+
+        document.getElementById("btn2").addEventListener("click", Subtract)
+        function Subtract() {
+            input1 = parseInt(document.getElementById("input1").value)
+            input2 = parseInt(document.getElementById("input2").value)
+            alert(input1 - input2)
+        }
+
+        document.getElementById("btn3").addEventListener("click", Multiply)
+        function Multiply() {
+            input1 = parseInt(document.getElementById("input1").value)
+            input2 = parseInt(document.getElementById("input2").value)
+            alert(input1 * input2)
+        }
+
+        document.getElementById("btn4").addEventListener("click", Devide)
+        function Devide() {
+            input1 = parseFloat(document.getElementById("input1").value)
+            input2 = parseFloat(document.getElementById("input2").value)
+            alert(input1 / input2)
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
